@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        .ask {
+            border: 1px solid #bababa;
+            height: auto;
+            width: 96%;
+            background-color: #fff;
+            text-align: center;
+            margin: 20px auto 0 2%;
+            border-radius: 4px;
+            padding: 5px 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .ask .ablock {
+            text-decoration: none;
+            background-color: #fff;
+            color: #d4d4d4;
+        }
+
+        .ask #mag {
+            float: left;
+            font-family: 'Bitter', serif;
+            transition: 0.32s;
+            margin-top: 2px;
+        }
+
+        .ask #us {
+            float: right;
+            font-family: 'Nunito', sans-serif;
+            transition: 0.32s;
+            margin-top: 2px;
+        }
+
+        .ask #us:hover,
+        #mag:hover {
+            color: #605c5c;
+        }
+
+        .ask #que {
+            width: 550px;
+            margin-left: 75px;
+            border-radius: 30px;
+            padding: 2px 15px 2px 15px;
+            box-sizing: border-box;
+            border: 1px solid #bababa;
+        }
+
+        .nav_btns {
+            background-color: #fff;
+            margin-top: 8px;
+        }
+
+        .ask .nav_btns a {
+            border: 1px solid #fff;
+            border-radius: 50px;
+            text-decoration: none;
+            background-color: #fff;
+            color: #605c5c;
+            height: 30px;
+            font-family: 'Rubik', sans-serif;
+            font-size: 17px;
+            padding-top: 2px;
+            transition: 0.32s;
+        }
+        .ask .nav_btns a:hover{
+            background-color: #ebebeb;
+        }
+        .ask .nav_btns c{
+            color: #605c5c;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="ask">
+        <a class="ablock" id="mag" href="#">By MAGNET</a>
+        <input class="block" id="que" type="text" placeholder="Ask whatever in your mind...">
+        <a class="ablock" id="us" href="about.html">Contact Us | About Us</a>
+        <div class="nav_btns">
+            <div class="container-fluid">
+                <div class="row align-items-start">
+                    <div class="col-4">
+                        <a class="ask_btn" href="#">Ask Question</a>
+                    </div>
+                    <div class="col-4">
+                        <a class="ans_btn" href="#">Ask Question</a>
+                    </div>
+                    <div class="col-4">
+                        <a class="us_btn" href="#">Ask Question</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

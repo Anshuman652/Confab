@@ -1,0 +1,110 @@
+ /*Section Part CSS Starts from here*/
+
+ .Sections_part {
+    margin-top: 10px;
+}
+
+
+/*First Section*/
+
+.section_one {
+    padding: 10px 5px 0px 170px;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: left;
+}
+
+.section_one .noti {
+    border: none 1px solid;
+}
+
+.section_one .noti p {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+}
+
+.section_one .noti hr {
+    margin: 0 0 2px 0;
+}
+
+.section_one .noti li {
+    border: #ebebeb 1px solid;
+    border-radius: 3px;
+    font-size: 13px;
+    width: 100%;
+    margin-top: 2px;
+    padding: 1px 2px 1px 10px;
+    text-decoration: none;
+}
+
+.section_one .noti li:hover {
+    background-color: #e0e0e0;
+    color: #8b0000;
+}
+
+.section_one .noti .active {
+    background-color: #b92b271a;
+}
+
+.section_one .noti .active a {
+    color: #8b0000;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    background-color: #b92b271a;
+}
+
+.section_one .noti .li_box a {
+    text-decoration: none;
+    color: #605c5c;
+    font-family: 'Roboto Slab', serif;
+}
+
+/*Second Section*/
+
+.section_two .img img {
+    width: 250px;
+}
+
+.section_two .img h2 {
+    font-family: 'Dosis', sans-serif;
+    color: #605c5c;
+}
+
+.Sections_part .Section_start .section_two .data_here {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: left;
+}
+.section_two .data_here  .redque{
+    width: 28px;
+    margin: 0 8px 0 0;
+}
+.section_two .data_here .all_top_Questions{
+    text-align: center;
+}
+.section_two .data_here .nodata_icon{
+    width: 120px;
+}
+
+/*Page Footer*/
+
+footer{
+    border: #605c5c solid 1px;
+    border-radius: 20px 20px 0 0;
+    height: 50px;
+    text-align: center;
+    background-color: #605c5c;
+    bottom: 0;
+    margin: 20px 0 0 0;
+}
+footer img{
+    height: 49px;
+}
+footer a{
+    text-decoration: none;
+    color: #d4d4d4;
+    font-family: 'Bitter', serif;
+}

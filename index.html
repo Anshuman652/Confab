@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,500&family=Dosis:wght@500&family=Roboto+Slab&family=Rubik&display=swap"
+        rel="stylesheet">
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/7c1fac282e.js" crossorigin="anonymous"></script>
+    <link href="/website/css/uicons-solid-rounded.css" rel="stylesheet">
+
+    <title>Confab</title>
+    <style>
+        body {
+            background-color: #ebebeb;
+        }
+
+        * {
+            background-color: #ebebeb;
+        }
+
+        #preloader {
+            background: #fff url(images/1683560465128.png) no-repeat center;
+            background-size: 15%;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            transition: 1.5s ease;
+        }
+
+        header {
+            align-items: center;
+            background-color: #fff;
+            height: auto;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .brand-name {
+            border: 1px solid #8b0000;
+            padding: 0;
+            background-color: #8b0000;
+            text-align: center;
+        }
+
+        .brand-name img {
+            height: 25px;
+            margin-bottom: 2px;
+
+
+        }
+
+        .header {
+            text-decoration: none;
+            text-align: center;
+            background-color: #fff;
+            padding: 5px 10px;
+        }
+
+        .header .a,
+        .add {
+            text-decoration: none;
+            display: inline-block;
+            margin: 1px 10px 1px 10px;
+        }
+
+        .header .a img {
+            height: 27px;
+            background-color: #fff;
+            padding: 2px;
+        }
+
+        .header input {
+            width: 190px;
+            box-sizing: border-box;
+            border: 1px solid #bababa;
+            border-radius: 30px;
+            font-size: 16px;
+            background-color: #f5f5f5;
+            background-position: 10px 10px;
+            padding: 2px 15px 2px 15px;
+        }
+
+        .header .add {
+            border: #8b0000 1px solid;
+            background-color: #8b0000;
+            border-radius: 30px;
+            color: #fff;
+            padding: 3px 10px;
+            transition: 0.3s;
+        }
+
+        .ask {
+            border: 1px solid #bababa;
+            height: auto;
+            width: 96%;
+            background-color: #fff;
+            text-align: center;
+            margin: 20px auto 10px 2%;
+            border-radius: 4px;
+            padding: 5px 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .ask .ablock {
+            text-decoration: none;
+            background-color: #fff;
+            color: #d4d4d4;
+        }
+
+        .ask #mag {
+            float: left;
+            font-family: 'Bitter', serif;
+            transition: 0.32s;
+            margin-top: 2px;
+        }
+
+        .ask #us {
+            float: right;
+            font-family: 'Nunito', sans-serif;
+            transition: 0.32s;
+            margin-top: 2px;
+        }
+
+        .ask #us:hover,
+        #mag:hover {
+            color: #605c5c;
+        }
+
+        .ask #que {
+            width: 550px;
+            margin-left: 75px;
+            border-radius: 30px;
+            padding: 2px 15px 2px 15px;
+            box-sizing: border-box;
+            border: 1px solid #bababa;
+        }
+
+        .nav_btns {
+            background-color: #fff;
+            margin-top: 8px;
+        }
+
+        .ask .nav_btns a {
+            border: 1px solid #fff;
+            border-radius: 50px;
+            text-decoration: none;
+            background-color: #fff;
+            display: inline-block;
+            color: #605c5c;
+            height: 30px;
+            width: 32.5%;
+            font-family: 'Rubik', sans-serif;
+            font-size: 17px;
+            padding-top: 2px;
+            transition: 0.32s;
+        }
+
+        .ask .nav_btns a:hover {
+            background-color: #ebebeb;
+        }
+
+        .ask .nav_btns c {
+            color: #605c5c;
+            background-color: #fff;
+        }
+
+        /*Page Footer*/
+
+        footer {
+            border: #605c5c solid 1px;
+            border-radius: 20px 20px 0 0;
+            height: 50px;
+            text-align: center;
+            background-color: #605c5c;
+            bottom: 0;
+            margin-top: 50px;
+        }
+
+        footer img {
+            height: 49px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #d4d4d4;
+            font-family: 'Bitter', serif;
+            background-color: #605c5c;
+        }
+
+        /*Section Part Starts From here*/
+
+        /*First Part*/
+
+        .part_one {
+            padding: 10px 5px 0px 170px;
+            list-style-type: none;
+            text-decoration: none;
+            text-align: left;
+        }
+
+        .part_one .cate {
+            border: none 1px solid;
+        }
+
+        .part_one .cate .category_head {
+            margin-bottom: 0;
+            font-weight: bold;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        .part_one .cate hr {
+            margin: 0 0 2px 0;
+        }
+
+        .part_one .cate .no_search {
+            width: 100%;
+        }
+
+        .part_one .cate .no_cat_avail {
+            font-size: 20px;
+            font-family: 'Dosis', sans-serif;
+            color: #605c5c;
+        }
+
+        .part_one .cate .links{
+            color: #bababa;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        .part_one .cate .links a{
+            text-decoration: none;
+            color: #a6a6a6;
+            font-family: 'Rubik', sans-serif;
+            transition: 0.3s;
+        }
+        .part_one .cate .links a:hover{
+            text-decoration: underline;
+        }
+
+        /*Second Part*/
+
+        .post {
+            border: 1px #bababa solid;
+            border-radius: 6px;
+            background-color: #fff;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .post .post_img {
+            width: 100%;
+        }
+
+        .part_two .img {
+            text-align: center;
+        }
+
+        .part_two .img img {
+            width: 250px;
+        }
+
+        .part_two .img h2 {
+            font-family: 'Dosis', sans-serif;
+            color: #605c5c;
+        }
+
+        /*Third Part*/
+
+        .part_thr .btn {
+            margin: 8px 0 0 35px;
+        }
+
+        .part_thr p {
+            font-family: 'Roboto Slab', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <header>
+        <div class="brand-name"><a href="index.html"><img src="images/20230508_122638.jpg" alt="CONFAB"></a></div>
+        <div class="header">
+            <a class="a" href="#"><img id="icons" src="images/1683562944289.png" alt="Home"></a>
+            <a class="a" href="answer.html"><img id="icons" src="images/1683564410621.png" alt="Answer"></a>
+            <a class="a" href="notifications.html"><img id="icons" src="images/1683563383686.png" alt="Notifications"></a>
+            <a class="a" href="community.html"><img id="icons" src="images/communitygray.png" alt="Community"></a>       
+            <input class="a" type="text" name="search" placeholder="Search..">
+            <a class="add" href="#"><i class="fa-solid fa-pen"
+                    style="color: #fff; background-color: #8b0000; margin: auto 10px auto 5px;"></i>Ask question</a>
+        </div>
+
+    </header>
+
+    <div class="ask">
+        <a class="ablock" id="mag" href="#">By MAGNET</a>
+        <input class="block" id="que" type="text" placeholder="Ask whatever in your mind...">
+        <a class="ablock" id="us" href="about.html">Contact Us | About Us</a>
+        <div class="nav_btns">
+            <a class="ask_btn" href="#">Ask Question</a>
+            <c>|</c>
+            <a class="ans_btn" href="#">Answer</a>
+            <c>|</c>
+            <a class="us_btn" href="#">Queations For Us </a>
+        </div>
+    </div>
+    <!--Section Division Part Starts From Here-->
+    <div class="container-fluid">
+        <div class="row align-items-start">
+            <!--Firt Part-->
+            <div class="part_one col-lg-3">
+                <div class="cate">
+                    <p class="category_head">Catagories</p>
+                    <hr>
+                    <img class="no_search" src="images/not found.jpg" alt="">
+                    <p class="no_cat_avail">No Categories Available</p>
+                    <hr>
+                    <p class="links"><a href="about.html">About</a> | <a href="#">Contact</a> | <a
+                            href="#">Qurarries</a> | <a href="#">Businesses</a> | <a href="#">Terms</a>
+                             | <a href="#">Privacy</a> | <a href="#">Avertisement</a>
+                        </p>
+                </div>
+            </div>
+            <!--Second Part-->
+            <div class="part_two col-lg-5">
+                <div class="post">
+                    <img class="post_img" src="images/invalidpost.jpg" alt="">
+                </div>
+                <!--img foot-->
+                <div class="img">
+                    <img src="images/empty-box.png" alt="">
+                    <h2>No More Posts Avilable</h2>
+                    <h4><a class="btn btn-primary" href="" role="button">Refresh Page</a></h4>
+                </div>
+            </div>
+            <!--Third Part-->
+            <div class="part_thr col-lg-4">
+                <img class="nodata" src="images/nodatabig.jpg" alt="">
+                <h4><a class="btn btn-primary" href="#" role="button">Upload your content</a></h4>
+                <hr>
+                <p>Will You want to be the first first person to upload your Question or share your Experience with
+                    us?<br>
+                    <br>
+                    If yes click <a href="#">Here</a> or click on ask question, given above.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+
+        var loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        })
+
+    </script>
+
+    <footer>
+        <img src="images/footimg.jpg" alt="">
+        <a href="#">By Magnet</a>
+    </footer>
+
+</body>
+
+</html>
